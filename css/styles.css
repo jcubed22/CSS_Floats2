@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #faf9f4;
+}
+
+/* Clearfix bid-ness
+===============================*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/* Bootstrap-ish body margin
+===============================*/
+.container {
+  max-width: 1200px;
+  margin: 25px auto;
+  padding: 20px;
+}
+
+/* Header stuff
+================================*/
+#logo {
+  float: left;
+}
+#topNav {
+  float: right;
+}
+#topNav nav {
+  float: left;
+}
+#topNav a:hover {
+  color: blue;
+}
+#topNav li:last-child {
+  margin-right: 0px;
+}
+#topNav nav li {
+  float: left;
+  margin-right: 26px;
+}
+#topNav nav li a {
+  display: inline-block;
+  line-height: 28px;
+  padding: 28.5px 0;
+}
+#topNav nav, #topNav ul, #topNav li, #topNav a {
+  color: black;
+  font-size: 14px;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+}
+nav ul, nav ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Main page
+===============================*/
+#page {
+  padding: 25px 0;
+}
+
+.left {
+  padding-left: 17px;
+  padding-right: 17px;
+  width: 50%;
+  float: left;
+}
+.right {
+  padding-left: 17px;
+  padding-right: 17px;
+  width: 50%;
+  float: right;
+}
+
+/* Photo gallery
+================================*/
+.thumbnail img {
+  width: 80%;
+  margin: 0px 10px 10px 0px;
+}
+.thumbnail {
+  float: left;
+}
