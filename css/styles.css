@@ -6,18 +6,16 @@ body {
 }
 
 /* Clearfix bid-ness
-===============================*/
-.clearfix:before,
+=============================== */
+
 .clearfix:after {
   content: "";
   display: table;
-}
-.clearfix:after {
   clear: both;
 }
 
 /* Bootstrap-ish body margin
-===============================*/
+=============================== */
 .container {
   max-width: 1200px;
   margin: 25px auto;
@@ -25,7 +23,7 @@ body {
 }
 
 /* Header stuff
-================================*/
+================================ */
 #logo {
   float: left;
 }
@@ -48,7 +46,7 @@ body {
 #topNav nav li a {
   display: inline-block;
   line-height: 28px;
-  padding: 28.5px 0;
+  padding: 20px 0;
 }
 #topNav nav, #topNav ul, #topNav li, #topNav a {
   color: black;
@@ -60,6 +58,7 @@ body {
   font-family: "Montserrat";
   font-weight: 400;
   font-style: normal;
+  -webkit-font-smoothing: antialiased;
 }
 nav ul, nav ol {
   list-style: none;
@@ -67,11 +66,13 @@ nav ul, nav ol {
 }
 
 /* Main page
-===============================*/
+=============================== */
 #page {
   padding: 25px 0;
 }
-
+#dude img {
+  width: 100%;
+}
 .left {
   padding-left: 17px;
   padding-right: 17px;
@@ -84,13 +85,100 @@ nav ul, nav ol {
   width: 50%;
   float: right;
 }
-
 /* Photo gallery
-================================*/
+================================ */
 .thumbnail img {
   width: 80%;
   margin: 0px 10px 10px 0px;
 }
 .thumbnail {
   float: left;
+}
+
+/* Newsletter section
+================================ */
+#newsletter {
+  text-align: center;
+  background-color: #efeee9;
+  margin-top: 50px;
+  padding: 15px 30px;
+  -webkit-font-smoothing: antialiased;
+}
+#subscribe h2 {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 30px;
+  line-height: 1.2em;
+}
+#signup label {
+  display: none;
+}
+#signup {
+  margin: 40px 0;
+}
+#signup input {
+  font-size: 15px;
+  width: auto;
+  height: 50px;
+  min-width: 250px;
+  padding: 6px 3px;
+}
+#signup button {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: normal;
+  width: auto;
+  height: 51px  ;
+  padding: 1em 2.5em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #272727;
+  border: 1px solid #272727 !important;
+  line-height: normal;
+  color: white;
+}
+
+/* Media queries
+=============================== */
+@media (max-width: 800px) {
+  #logo {
+    float: none;
+  }
+  #logo a img {
+    margin: 0 33%;
+  }
+  #topNav {
+    float: none;
+    width: 100%;
+  }
+  #topNav nav {
+    margin: 0 33%;
+  }
+  #topNav nav li {
+    float: none;
+    margin-right: 5px;
+    display: inline-block;
+  }
+  .left {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .gallery {
+    width: 100%;
+    margin: auto;
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
